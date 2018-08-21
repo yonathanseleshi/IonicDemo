@@ -28,7 +28,17 @@ export class ShopPage {
 
   goToBuyout(item){
 
-    this.navCtrl.push(BuyoutPage, {item: item})
+    this.navCtrl.push(BuyoutPage, {item: item}, {
+
+      animation: 'slide',
+      animate: true,
+      direction: 'forward',
+      duration: 500,
+      easing: 'ease-out'
+
+
+
+    })
 
   }
 }
